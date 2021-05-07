@@ -163,4 +163,4 @@ WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/M
 
 'Vérifier que le bouton valider reste non cliquable'
 WebUI.verifyElementNotClickable(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'))
-
+//
