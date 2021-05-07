@@ -80,6 +80,9 @@ WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/S
     'Créé le')
 
 'Vérifier que le tableau affiche le pièce jointe vennant d\'être télécharger:\r\n- Type: Justificatif d\'identité\r\n- Description: CIN recto\r\n- Déposé par: [nom user]\r\n- Créé le: date et heure de création\r\n- Bouton de supréssion '
+WebUI.verifyElementPresent(findTestObject('Page Activité/Page activité (commun)/Section Onglets/Onglet pieces jointes/Bouton de supression'), 
+    3)
+
 WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Section Onglets/Onglet pieces jointes/Colonne type'), 
     'Justificatif d\'identité')
 
@@ -90,8 +93,5 @@ WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/S
     GlobalVariable.loginUsername)
 
 WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Section Onglets/Onglet pieces jointes/Colonne cree le'), 
-   dateHeureTraitement)
-
-WebUI.verifyElementPresent(findTestObject('Page Activité/Page activité (commun)/Section Onglets/Onglet pieces jointes/Bouton de supression'), 
-    3)
+    dateHeureTraitement)
 

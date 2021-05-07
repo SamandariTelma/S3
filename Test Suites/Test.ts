@@ -12,9 +12,9 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>fdb63b24-a1d9-48b1-91c1-7f05bd3e01df</testSuiteGuid>
    <testCaseLink>
-      <guid>3705292c-f0e2-4ecd-9491-fb63e3d365ef</guid>
+      <guid>a3f65cf9-1544-44cd-b4d6-f9f842ccff1e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-Activité récupération numéro/02-Recuperation numero avec un ICCID invalide</testCaseId>
+      <testCaseId>Test Cases/02-Création activié/08-Création activité SIM Swap via un service</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

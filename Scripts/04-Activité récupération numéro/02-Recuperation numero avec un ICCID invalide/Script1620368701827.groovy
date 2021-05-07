@@ -14,13 +14,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import java.awt.event.KeyEvent as KeyEvent
+import org.openqa.selenium.Keys as Keys
 
-/*'Prérequis: Création d\'un activité SIM Swap via un service actif'
-WebUI.callTestCase(findTestCase('02-Création activié/08-Création activité SIM Swap via un service'), [:], FailureHandling.CONTINUE_ON_FAILURE)*/
 'Prérequis: Création d\'un activité récupération numéro'
-//WebUI.callTestCase(findTestCase('02-Création activié/07-Création activité récupération numero via un service'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('00-Called Test Case/Connexion à S3'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('02-Création activié/07-Création activité récupération numero via un service'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('00-Called Test Case/Connexion à S3'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('Page d accueil/Section Mes activités/Colonne numero'), 5)
 
@@ -79,7 +79,9 @@ WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire
 
 WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'))
 
-WebUI.delay(0.500)
+WebUI.delay(2)
+
+WebUI.waitForElementVisible(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 5)
 
 WebUI.waitForElementPresent(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 3)
 
@@ -88,70 +90,59 @@ WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/M
 'Vérifier que le bouton valider reste non cliquable'
 WebUI.verifyElementNotClickable(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'))
 
-WebUI.clearText(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
+    Keys.chord(Keys.CONTROL, 'a'))
 
-WebUI.delay(0.500)
+WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
+    Keys.chord(Keys.BACK_SPACE))
 
 'Saisir le même ICCID que le numéro de service'
 WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
     GlobalVariable.ancienICCD)
 
-WebUI.delay(0.500)
-
-WebUI.waitForElementPresent(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'), 
-    3)
-
 WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'))
 
-WebUI.delay(0.500)
+WebUI.delay(2)
+
+WebUI.waitForElementVisible(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 5)
 
 WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 'L’identifiant ICCID renseigné est le même que celui de la sim actuelle')
 
 'Vérifier que le bouton valider reste non cliquable'
 WebUI.verifyElementNotClickable(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'))
 
-WebUI.clearText(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
-/*
-'Saisir un ICCID déjà swapé auparavant'
 WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    GlobalVariable.iccidDejaSwape)
+    Keys.chord(Keys.CONTROL, 'a'))
 
-WebUI.click(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'))
+WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
+    Keys.chord(Keys.BACK_SPACE))
 
-WebUI.waitForElementVisible(findTestObject('Page Activité/Popin confirmation activite, commande (commun)/Titre popin'), 
-    3)
-
-WebUI.click(findTestObject('Page Activité/Popin confirmation activite, commande (commun)/Bouton Oui'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 'L’identifiant ICCID renseigné n’est pas disponible')
-
-WebUI.clearText(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    FailureHandling.CONTINUE_ON_FAILURE)
-*/
 'Saisir un ICCID appartenant à un numéro postpaid'
 WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
     GlobalVariable.iccidPostpaid)
 
 WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'))
 
-WebUI.delay(2)
+WebUI.delay(3)
+
+WebUI.waitForElementVisible(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 5)
 
 WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 'Le numéro provisoire est un numéro POSTPAID')
 
 'Vérifier que le bouton valider reste non cliquable'
 WebUI.verifyElementNotClickable(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'))
 
-WebUI.clearText(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
+    Keys.chord(Keys.CONTROL, 'a'))
+
+WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
+    Keys.chord(Keys.BACK_SPACE))
 
 WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'))
 
-WebUI.waitForElementPresent(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 5)
+WebUI.delay(3)
+
+WebUI.waitForElementVisible(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 5)
 
 WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 'Veuillez saisir le nouvel ICCID')
 
@@ -164,7 +155,9 @@ WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire
 
 WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'))
 
-WebUI.delay(2)
+WebUI.delay(3)
+
+WebUI.waitForElementVisible(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 5)
 
 WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 'The requested iccid does not exist')
 
