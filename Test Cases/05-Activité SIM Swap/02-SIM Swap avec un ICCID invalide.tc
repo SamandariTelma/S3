@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>02-SIM Swap avec un ICCID invalide</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>83bb0952-54a6-4884-9254-139ad9016a38</testCaseGuid>
+</TestCaseEntity>

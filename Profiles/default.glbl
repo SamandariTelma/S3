@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://tapt252lv:8448/DSCRM/'</initValue>
+      <name>url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'samandari'</initValue>
+      <name>loginUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Thas4e@1420'</initValue>
+      <name>loginPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'DSI_PROJET_S3'</initValue>
+      <name>typeCompte</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Samandari RAVELOMANANTSOA'</initValue>
+      <name>titulaireCompte</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT</description>
+      <initValue>'0451006'</initValue>
+      <name>numeroCompte</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour SIM Swap)</description>
+      <initValue>'0346902789'</initValue>
+      <name>serviceActifSwap1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour SIM Swap)</description>
+      <initValue>'8926104242001942201'</initValue>
+      <name>nouvelICCIDSwap1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour SIM Swap)</description>
+      <initValue>'8926104242001942367'</initValue>
+      <name>iccidDejaSwape</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour Recup num)</description>
+      <initValue>'0341408769'</initValue>
+      <name>serviceResilie1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'8926104242001942367'</initValue>
+      <name>ancienICCD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour SIM Swap et Recup)</description>
+      <initValue>'8926104242001942375'</initValue>
+      <name>iccidPostpaid</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

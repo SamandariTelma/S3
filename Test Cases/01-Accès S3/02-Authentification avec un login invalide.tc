@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>02-Authentification avec un login invalide</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>705409e2-7f9e-4122-b382-d378e08c23a2</testCaseGuid>
+</TestCaseEntity>

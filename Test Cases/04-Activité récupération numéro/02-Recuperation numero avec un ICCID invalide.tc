@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>02-Recuperation numero avec un ICCID invalide</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b5baf110-7086-4f1a-8557-9c6139ee1a7e</testCaseGuid>
+</TestCaseEntity>
