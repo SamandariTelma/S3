@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>04-Vérification opération Recuperation numéro sans sortie SIM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6f7bae33-0242-492d-b4a5-e69798e731ea</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.serviceResilie1</defaultValue>
+      <description></description>
+      <id>999f49a2-be22-4792-87ef-e6948ee4bbac</id>
+      <masked>false</masked>
+      <name>numeroResilie</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.nouvelICCIDRecup1</defaultValue>
+      <description></description>
+      <id>549c5aaa-fe9f-4641-99dd-405039deb24c</id>
+      <masked>false</masked>
+      <name>nouvelICCID</name>
+   </variable>
+</TestCaseEntity>

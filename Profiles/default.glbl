@@ -51,8 +51,33 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>INIT (Pour Recup num)</description>
-      <initValue>'0341408769'</initValue>
+      <initValue>'0346902789'</initValue>
       <name>serviceResilie1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour Recup num)</description>
+      <initValue>'8926104212102608522'</initValue>
+      <name>nouvelICCIDRecup1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour Choix num)</description>
+      <initValue>'0343786175'</initValue>
+      <name>servicePreactif1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour Choix num)</description>
+      <initValue>'0340000000'</initValue>
+      <name>nouvelNumero1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour Recup num)</description>
+      <initValue>'0343263856'</initValue>
+      <name>serviceResilie2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour Recup num), ICCD est declaré sur POS</description>
+      <initValue>'8926104212102608522'</initValue>
+      <name>nouvelICCIDRecup2</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

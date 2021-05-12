@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>06-Création activité choix de numero via un service</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>72a03892-f32a-4a1f-9962-f1d0bf74d2b8</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.servicePreactif1</defaultValue>
+      <description></description>
+      <id>5a4e86b6-afdc-4f5d-8e01-54ce02c83b4b</id>
+      <masked>false</masked>
+      <name>numeroPreactif</name>
+   </variable>
+</TestCaseEntity>

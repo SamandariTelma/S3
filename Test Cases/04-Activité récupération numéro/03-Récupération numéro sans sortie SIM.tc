@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>03-Récupération numéro sans sortie SIM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f14fb4c6-56a5-41bd-b259-04755964afc7</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.serviceResilie1</defaultValue>
+      <description></description>
+      <id>6b4b3868-e48b-4f61-95f8-f18a71c2b140</id>
+      <masked>false</masked>
+      <name>numeroResilie</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.nouvelICCIDRecup1</defaultValue>
+      <description></description>
+      <id>dcbe53d9-a701-4fec-b68a-64603eceb157</id>
+      <masked>false</masked>
+      <name>nouvelICCID</name>
+   </variable>
+</TestCaseEntity>

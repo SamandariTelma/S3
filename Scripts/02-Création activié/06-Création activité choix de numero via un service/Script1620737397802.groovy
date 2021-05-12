@@ -18,16 +18,14 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-//Initialisation du numéro à utiliser dans le nouvel activité
-String numeroAResisie= "${numeroResilie}"
-
+String numeorPreactif="${numeroPreactif}"
 'Se connecter à S3'
 WebUI.callTestCase(findTestCase('00-Called Test Case/Connexion à S3'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('Header/Moteur de recherche'), 10)
 
-'Saisir un numéro résilié dans le moteur de recherche'
-WebUI.sendKeys(findTestObject('Header/Moteur de recherche'), numeroAResisie)
+'Saisir un numéro préactivé dans le moteur de recherche'
+WebUI.sendKeys(findTestObject('Header/Moteur de recherche'), numeroPreactif)
 
 'Cliquer sur le bouton loupe'
 WebUI.click(findTestObject('Header/Bouton loupe'))
@@ -66,7 +64,7 @@ for (i = 0; (i < resultSize) && (isfound == false); i++) {
 
     numero = numeroService.getText()
 
-    if (typeService.equals('Service Mobile / Résilié') && numeroAppel.equals(numeroAResisie)) {
+    if (typeService.equals('Service Mobile / Préactivé') && numeroAppel.equals(numeroPreactif)) {
         type.click()
 
         isfound = true
@@ -79,7 +77,7 @@ WebUI.waitForElementPresent(findTestObject('Page Service/Fil ariane Service'), 5
 WebUI.verifyElementText(findTestObject('Page Service/Fil ariane Service'), 'Service ' + numero)
 
 'Vérifier que le MSISDN dans la page est la même que celui du service séléctionné'
-WebUI.verifyElementText(findTestObject('Page Service/Section Info service/info MSISDN'), numeroAResisie)
+WebUI.verifyElementText(findTestObject('Page Service/Section Info service/info MSISDN'), numeroPreactif)
 
 GlobalVariable.ancienICCD = WebUI.getText(findTestObject('Page Service/Section Info service/info SIM'))
 
@@ -104,14 +102,14 @@ WebUI.verifyElementAttributeValue(findTestObject('Page Compte/Onglet Activite/Po
 'Cliquer sur le bouton Contact Entrant'
 WebUI.click(findTestObject('Page Compte/Onglet Activite/Popin Nouvelle Activité/Bouton Contact Entrant'))
 
-WebUI.waitForElementVisible(findTestObject('Page Compte/Onglet Activite/Popin Nouvelle Activité/Bouton Récupération de numéro'), 
+WebUI.waitForElementVisible(findTestObject('Page Compte/Onglet Activite/Popin Nouvelle Activité/Bouton Choix de numéro'), 
     3)
 
-WebUI.verifyElementAttributeValue(findTestObject('Page Compte/Onglet Activite/Popin Nouvelle Activité/Bouton Récupération de numéro'), 
-    'value', 'Récupération de Numéro', 3)
+WebUI.verifyElementAttributeValue(findTestObject('Page Compte/Onglet Activite/Popin Nouvelle Activité/Bouton Choix de numéro'), 
+    'value', 'Choix de Numéro', 3)
 
-'Cliquer sur le bouton Récupération numéro'
-WebUI.click(findTestObject('Page Compte/Onglet Activite/Popin Nouvelle Activité/Bouton Récupération de numéro'))
+'Cliquer sur le bouton Choix de numéro'
+WebUI.click(findTestObject('Page Compte/Onglet Activite/Popin Nouvelle Activité/Bouton Choix de numéro'))
 
 //Récupération de la date et heure actuel
 def date = new Date()
@@ -144,7 +142,7 @@ WebUI.waitForElementPresent(findTestObject('Page d accueil/Section Mes activité
 WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.url + 'activity/index.xhtml', false)
 
 'Vérifier l\'apparition de l\'activité qui vient d\'être crée '
-WebUI.verifyElementText(findTestObject('Page d accueil/Section Mes activités/Colonne Activité'), 'Récupération de Numéro')
+WebUI.verifyElementText(findTestObject('Page d accueil/Section Mes activités/Colonne Activité'), 'Choix de Numéro')
 
 'Vérifier que le statut est en cours'
 WebUI.verifyElementText(findTestObject('Page d accueil/Section Mes activités/Colonne Statut'), 'En cours')
@@ -157,3 +155,4 @@ dateCreationActivite = dateCreationActivite.substring(0, 14)
 WebUI.verifyMatch(dateCreationActivite, dateHeureTraitement, false)
 
 WebUI.verifyElementText(findTestObject('Page d accueil/Section Mes activités/Colonne numero'), numeroActivite)
+

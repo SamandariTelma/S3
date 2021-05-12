@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>06-Annulation de l activite SIM Swap</name>
+   <name>05-Annulation de l activite SIM Swap</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5272a672-e3f6-4d84-ba9f-bbbe44c4741e</testCaseGuid>

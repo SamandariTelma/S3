@@ -18,13 +18,14 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+String serviceAswape="${serviceASwape}"
 'Se connecter à S3'
 WebUI.callTestCase(findTestCase('00-Called Test Case/Connexion à S3'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('Header/Moteur de recherche'), 10)
 
 'Saisir un numéro actif dans le moteur de recherche'
-WebUI.sendKeys(findTestObject('Header/Moteur de recherche'), GlobalVariable.serviceActifSwap1)
+WebUI.sendKeys(findTestObject('Header/Moteur de recherche'), serviceASwape)
 
 'Cliquer sur le bouton loupe'
 WebUI.click(findTestObject('Header/Bouton loupe'))
@@ -63,7 +64,7 @@ for (i = 0; (i < resultSize) && (isfound == false); i++) {
 
     numero = numeroService.getText()
 
-    if (typeService.equals('Service Mobile / Actif') && numeroAppel.equals(GlobalVariable.serviceActifSwap1)) {
+    if (typeService.equals('Service Mobile / Actif') && numeroAppel.equals(serviceASwape)) {
         type.click()
 
         isfound = true
@@ -76,7 +77,7 @@ WebUI.waitForElementPresent(findTestObject('Page Service/Fil ariane Service'), 5
 WebUI.verifyElementText(findTestObject('Page Service/Fil ariane Service'), 'Service ' + numero)
 
 'Vérifier que le MSISDN dans la page est la même que celui du service séléctionné'
-WebUI.verifyElementText(findTestObject('Page Service/Section Info service/info MSISDN'), GlobalVariable.serviceActifSwap1)
+WebUI.verifyElementText(findTestObject('Page Service/Section Info service/info MSISDN'), serviceASwape)
 
 GlobalVariable.ancienICCD=WebUI.getText(findTestObject('Page Service/Section Info service/info SIM'))
 

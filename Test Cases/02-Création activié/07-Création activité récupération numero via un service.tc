@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>95951a76-f953-4026-a827-213ceabeded1</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.serviceResilie1</defaultValue>
+      <description></description>
+      <id>7a46c06f-ae9f-45b4-9292-377ba25c0e20</id>
+      <masked>false</masked>
+      <name>numeroResilie</name>
+   </variable>
 </TestCaseEntity>

@@ -18,10 +18,9 @@ import java.awt.event.KeyEvent as KeyEvent
 import org.openqa.selenium.Keys as Keys
 
 'Prérequis: Création d\'un activité récupération numéro'
-
 WebUI.callTestCase(findTestCase('02-Création activié/07-Création activité récupération numero via un service'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-//WebUI.callTestCase(findTestCase('00-Called Test Case/Connexion à S3'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+//WebUI.callTestCase(findTestCase('00-Called Test Case/Connexion à S3'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.waitForElementPresent(findTestObject('Page d accueil/Section Mes activités/Colonne numero'), 5)
 
 String numeroActivite = WebUI.getText(findTestObject('Page d accueil/Section Mes activités/Colonne numero'))
@@ -163,4 +162,4 @@ WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/M
 
 'Vérifier que le bouton valider reste non cliquable'
 WebUI.verifyElementNotClickable(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'))
-//
+
