@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>04-Vérification opération choix numéro sans sortie SIM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7bf414af-739b-45df-8b61-f390ff1566a9</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.nouvelNumero1</defaultValue>
+      <description></description>
+      <id>f6df6b74-e061-424d-a1b1-2f8a52e1a659</id>
+      <masked>false</masked>
+      <name>nouvelNumero</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.iccidPreactif1</defaultValue>
+      <description></description>
+      <id>6f2c0ce6-2379-4baf-bea0-c66a0070026f</id>
+      <masked>false</masked>
+      <name>iccidAncienNumero</name>
+   </variable>
+</TestCaseEntity>

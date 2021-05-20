@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>03-Création activité récupération numéro</name>
+   <name>03-SIM Swap sans sortie SIM</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>17102e91-6d60-4d0a-9375-14c33099bd2d</testCaseGuid>
+   <testCaseGuid>4476c930-ee4a-403b-8bbd-7d5a0acaabd1</testCaseGuid>
    <variable>
       <defaultValue>GlobalVariable.serviceActifSwap1</defaultValue>
       <description></description>
-      <id>ccd13445-f8e8-4253-a6c0-dfe599d7c766</id>
+      <id>879fb405-88cd-49e6-b111-36680c2df3e3</id>
       <masked>false</masked>
       <name>numeroASwape</name>
    </variable>
    <variable>
       <defaultValue>GlobalVariable.nouvelICCIDSwap1</defaultValue>
       <description></description>
-      <id>0f0d502d-6c50-4346-a5ce-e707c71615f7</id>
+      <id>d0eb708a-8d0b-4a25-957b-5a1f272a5d8a</id>
       <masked>false</masked>
-      <name>nouvelIccidSwap</name>
+      <name>nouvelICCIDSwape</name>
    </variable>
 </TestCaseEntity>

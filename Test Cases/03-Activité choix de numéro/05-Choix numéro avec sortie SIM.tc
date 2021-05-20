@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>05-Choix numéro avec sortie SIM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6d3ffa63-9922-46ec-969d-cf2973616bb8</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.servicePreactif2</defaultValue>
+      <description></description>
+      <id>cb87d9c3-5299-47de-8e13-06e7088901ce</id>
+      <masked>false</masked>
+      <name>numeroAChoisir</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.nouvelNumero2</defaultValue>
+      <description></description>
+      <id>83d1dd1a-460d-4304-9c1b-5dd7947d5f4c</id>
+      <masked>false</masked>
+      <name>nouvelNumero</name>
+   </variable>
+</TestCaseEntity>

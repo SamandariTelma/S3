@@ -18,7 +18,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-String serviceAswape="${serviceASwape}"
+String serviceASwape="${serviceASwape}"
 'Se connecter à S3'
 WebUI.callTestCase(findTestCase('00-Called Test Case/Connexion à S3'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -64,7 +64,7 @@ for (i = 0; (i < resultSize) && (isfound == false); i++) {
 
     numero = numeroService.getText()
 
-    if (typeService.equals('Service Mobile / Actif') && numeroAppel.equals(serviceASwape)) {
+    if ((typeService.equals('Service Mobile / Actif')||typeService.equals('Service Mobile / Préactivé')) && numeroAppel.equals(serviceASwape)) {
         type.click()
 
         isfound = true

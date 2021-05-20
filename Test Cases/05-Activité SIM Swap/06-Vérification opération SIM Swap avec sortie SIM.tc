@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>06-Vérification opération SIM Swap avec sortie SIM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f8611ac-41e6-4767-a3e9-5384c9bbfc0f</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.serviceActifSwap2</defaultValue>
+      <description></description>
+      <id>4a6f8896-7dd8-4586-af71-fb030dc0e01d</id>
+      <masked>false</masked>
+      <name>numeroASwape</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.nouvelICCIDSwap2</defaultValue>
+      <description></description>
+      <id>44e4a3b1-092a-46fd-b1c8-0c1a6f2f942c</id>
+      <masked>false</masked>
+      <name>nouvelICCID</name>
+   </variable>
+</TestCaseEntity>

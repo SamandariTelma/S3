@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>05-SIM Swap avec sortie SIM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1189a71-9ce3-418d-8214-8264751440fb</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.serviceActifSwap2</defaultValue>
+      <description></description>
+      <id>004df372-4803-4265-9027-58883bba7c9b</id>
+      <masked>false</masked>
+      <name>numeroASwape</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.nouvelICCIDSwap2</defaultValue>
+      <description></description>
+      <id>cb8b9ae2-4678-4685-8853-e995b7729c95</id>
+      <masked>false</masked>
+      <name>nouvelICCIDSwape</name>
+   </variable>
+</TestCaseEntity>

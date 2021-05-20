@@ -15,17 +15,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
-import java.awt.event.KeyEvent as KeyEvent
-import org.openqa.selenium.Keys as Keys
+
+String numeroASwape = "$numeroASwape"
+
+String nouvelIccid = "$nouvelICCIDSwape"
 
 /*'Prérequis: Création d\'un activité SIM Swap via un service actif'
 WebUI.callTestCase(findTestCase('02-Création activié/08-Création activité SIM Swap via un service'), [:], FailureHandling.CONTINUE_ON_FAILURE)*/
-WebUI.callTestCase(findTestCase('02-Création activié/07-Création activité récupération numero via un service'), [('numeroResilie') : GlobalVariable.serviceResilie1], 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
-String numeroAResilie = "$numeroResilie"
-
-String nouvelIccid = "$nouvelICCID"
+WebUI.callTestCase(findTestCase('02-Création activié/08-Création activité SIM Swap via un service'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('Page d accueil/Section Mes activités/Colonne numero'), 5)
 
@@ -38,11 +35,18 @@ WebUI.waitForElementPresent(findTestObject('Page Activité/Page activité (commu
 
 numeroActiviteFilAriane = WebUI.getText(findTestObject('Page Activité/Page activité (commun)/Fil ariane Activité'))
 
+'Vérifier que le champ service est prérempli par le numéro de service'
 WebUI.verifyMatch(numeroActiviteFilAriane.substring(9), numeroActivite, false)
 
-'Vérifier que le champ service est prérempli par le numéro de service'
+'Vérifier que le champ ancien ICCID est prérempli par le numero ICCD du numéro actif'
 WebUI.verifyElementAttributeValue(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Service'), 
-    'value', numeroAResilie, 3)
+    'value', numeroASwape, 3)
+
+WebUI.verifyElementAttributeValue(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Ancien ICCID'), 
+    'value', GlobalVariable.ancienICCD, 3)
+
+ancienICCID = WebUI.getAttribute(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Ancien ICCID'), 
+    'value')
 
 'Choisir non dans le champ sortie de SIM'
 WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Sortie de SIM'))
@@ -75,48 +79,33 @@ WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Ch
 
 WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'), 'TEST')
 
+'Cliquer sur le bouton valider'
+WebUI.click(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'))
+
+'Vérifier l\'apparition du popin de confirmation avec les éléments suivants:\r\n- titre: Confirmation\r\n- message: Etes-vous sûr de vouloir clôturer cette activité?\r\n- Bouton oui et non\r\n'
+WebUI.waitForElementVisible(findTestObject('Page Activité/Popin confirmation activite, commande (commun)/Titre popin'), 
+    3)
+
+WebUI.verifyElementText(findTestObject('Page Activité/Popin confirmation activite, commande (commun)/Titre popin'), 'Confirmation')
+
+WebUI.verifyElementText(findTestObject('Page Activité/Popin confirmation activite, commande (commun)/Message de confirmation'), 
+    'Etes-vous sûr de vouloir clôturer cette activité?')
+
+WebUI.verifyElementPresent(findTestObject('Page Activité/Popin confirmation activite, commande (commun)/Bouton Non'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Page Activité/Popin confirmation activite, commande (commun)/Bouton Oui'), 3)
+
+'Cliquer sur le bouton Oui du popin'
+WebUI.click(findTestObject('Page Activité/Popin confirmation activite, commande (commun)/Bouton Oui'))
+
 WebUI.waitForElementPresent(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 5)
 
 WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Message d erreur orange'), 'Aucune pièce jointe n’a été déposée pour cette activité')
 
-'Vérifier que le bouton valider n\'est pas cliquable'
-WebUI.verifyElementNotClickable(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'), FailureHandling.CONTINUE_ON_FAILURE)
-
 'Ajouter une pièce jointe'
 WebUI.callTestCase(findTestCase('02-Création activié/00-Called Tests Case/Ajout pièce jointe'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    Keys.chord(Keys.CONTROL, 'a'))
-
-WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    Keys.chord(Keys.BACK_SPACE))
-
-'Cliquer sur le champ commentaire'
-WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(0.500)
-
-WebUI.waitForElementPresent(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    3)
-
-'Saisir à nouveau le nouvel ICCID'
-WebUI.sendKeys(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/Champ Nouvel ICCID'), 
-    nouvelIccid)
-
-'Cliquer sur le champ commentaire'
-WebUI.click(findTestObject('Page Activité/Page activité (commun)/Formulaire Choix de Numéro/Champ Commentaires'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Vérifier la présence du message Ce numéro peut être récupéré'
-WebUI.waitForElementPresent(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/message numero peut être recuperé'), 
-    10)
-
-WebUI.verifyElementText(findTestObject('Page Activité/Page activité (commun)/Formulaire Récupération de Numéro/message numero peut être recuperé'), 
-    'Ce numéro peut être récupéré')
-
 WebUI.waitForElementClickable(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'), 5)
-
-'Vérifier que le bouton valider devient cliquable'
-WebUI.verifyElementClickable(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'), FailureHandling.CONTINUE_ON_FAILURE)
 
 'Cliquer sur le bouton valider'
 WebUI.click(findTestObject('Page Activité/Page activité (commun)/Bouton Valider'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -169,30 +158,23 @@ WebUI.click(findTestObject('Page Activité/Popin confirmation activite, commande
 'Retourner sur la Home Page'
 WebUI.click(findTestObject('Header/Menue Home Page S3'))
 
-//Vérification de l'état de l'activité dans la Home Page
+WebUI.delay(0.500)
+
 'Vérifier que l\'on est redirigé vers la page d\'accueil'
 WebUI.waitForElementPresent(findTestObject('Page d accueil/Section Mes activités/Colonne Activité'), 10)
 
 'Vérifier l\'apparition de l\'activité qui vient d\'être crée '
-WebUI.verifyElementText(findTestObject('Page d accueil/Section Mes activités/Colonne Activité'), 'Récupération de Numéro')
+WebUI.verifyElementText(findTestObject('Page d accueil/Section Mes activités/Colonne Activité'), 'Sim Swap')
 
 'Vérifier que le statut est fermé'
 WebUI.verifyElementText(findTestObject('Page d accueil/Section Mes activités/Colonne Statut'), 'Fermé')
 
-String dateModificationActivite = WebUI.getText(findTestObject('Page d accueil/Section Mes activités/Colonne Date'))
+String dateCreationActivite = WebUI.getText(findTestObject('Page d accueil/Section Mes activités/Colonne Date'))
 
-dateModificationActivite = dateModificationActivite.substring(0, 14)
+dateCreationActivite = dateCreationActivite.substring(0, 14)
 
 'Vérifier que la date du traitement est conforme'
-WebUI.verifyMatch(dateModificationActivite, dateHeureTraitement, false)
+WebUI.verifyMatch(dateCreationActivite, dateHeureTraitement, false)
 
 WebUI.verifyElementText(findTestObject('Page d accueil/Section Mes activités/Colonne numero'), numeroActivite)
-
-/*
-WebUI.delay(60)
-
-WebUI.callTestCase(findTestCase('05-Activité SIM Swap/06-Vérification opération SIM Swap avec sortie SIM'), [('numeroActivite') : numeroActivite
-        , ('dateHeureTraitement') : dateHeureTraitement], FailureHandling.CONTINUE_ON_FAILURE)
-*/
-println('fin')
 

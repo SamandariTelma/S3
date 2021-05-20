@@ -11,4 +11,22 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>fdb63b24-a1d9-48b1-91c1-7f05bd3e01df</testSuiteGuid>
+   <testCaseLink>
+      <guid>0a54f5a6-1f32-4360-92ad-7b1092e566de</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Activité choix de numéro/03-Choix numéro sans sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0cb78a46-fc0b-4cf7-a262-fd222fae08d0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>80eb39c6-db45-45ab-804d-6f6dbc8b1e08</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

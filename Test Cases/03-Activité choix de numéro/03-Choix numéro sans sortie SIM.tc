@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>03-Choix numéro sans sortie SIM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>504797af-7e24-4e30-8682-bc4e8afab25d</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.servicePreactif1</defaultValue>
+      <description></description>
+      <id>0cb78a46-fc0b-4cf7-a262-fd222fae08d0</id>
+      <masked>false</masked>
+      <name>numeroAChoisir</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.nouvelNumero1</defaultValue>
+      <description></description>
+      <id>80eb39c6-db45-45ab-804d-6f6dbc8b1e08</id>
+      <masked>false</masked>
+      <name>nouvelNumero</name>
+   </variable>
+</TestCaseEntity>
