@@ -66,13 +66,33 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>INIT (Pour Recup num)</description>
-      <initValue>' '</initValue>
+      <initValue>'0343263856'</initValue>
       <name>serviceResilie1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>INIT (Pour Recup num)</description>
-      <initValue>'8926104212102608530'</initValue>
+      <initValue>'8926104212102608589'</initValue>
       <name>nouvelICCIDRecup1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'8926104242001942383'</initValue>
+      <name>ancienICCD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour SIM Swap et Recup)</description>
+      <initValue>'8926104242001941385'</initValue>
+      <name>iccidPostpaid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour Recup num)</description>
+      <initValue>'0343263856'</initValue>
+      <name>serviceResilie2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>INIT (Pour Recup num), ICCD est declaré sur POS</description>
+      <initValue>'8926104212102608589'</initValue>
+      <name>nouvelICCIDRecup2</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>INIT (Pour Choix num)</description>
@@ -103,25 +123,5 @@
       <description>INIT (Pour Choix num), ICCID est declaré dans POS</description>
       <initValue>'8926104212102608498'</initValue>
       <name>iccidPreactif2</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>INIT (Pour Recup num)</description>
-      <initValue>'0343263856'</initValue>
-      <name>serviceResilie2</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>INIT (Pour Recup num), ICCD est declaré sur POS</description>
-      <initValue>'8926104212102608589'</initValue>
-      <name>nouvelICCIDRecup2</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>INIT (Pour SIM Swap et Recup)</description>
-      <initValue>'8926104242001942375'</initValue>
-      <name>iccidPostpaid</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'8926104242001942367'</initValue>
-      <name>ancienICCD</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

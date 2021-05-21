@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Full TNR Activité</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>3</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>55682c1e-050a-4d75-948c-8bf2729e1f4d</testSuiteGuid>
+   <testCaseLink>
+      <guid>1f32bddc-4233-4c08-adc4-84a15bdb6b38</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/01-Accès S3/01-Authentification avec succès</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5cc0de3e-aa32-4635-b958-965d6a425bd5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/01-Accès S3/02-Authentification avec un login invalide</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>279fe456-3948-48ae-aa32-3388de0d56c1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Création activié/01-Recherche compte S3</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>41d26780-3b49-459e-a9c9-11cd15c122a9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Création activié/05-Recherche activité</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2d2e7503-3696-45f7-ae7d-4f866e0ee9c6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Création activié/02-Création activité choix numéro</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0dec995a-ab67-481b-88be-e750b7e0a5fb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Création activié/03-Création activité récupération numéro</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ccd13445-f8e8-4253-a6c0-dfe599d7c766</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0f0d502d-6c50-4346-a5ce-e707c71615f7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>20929d5c-4257-4245-9c83-f8d86f6636c4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Création activié/04-Création activité SIM Swap</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>08c10d13-b8a5-4672-9895-af463d980dd8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Activité choix de numéro/01-Formulaire choix de numéro</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4c1baf18-1dfa-4efe-9cbf-a74757a715b4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Activité récupération numéro/01-Formulaire récupération numéro</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a4704415-6dec-4f4f-bfe4-b0a05cd1218b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Activité SIM Swap/01-Formulaire SIM Swap</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>134e42db-1d43-435d-845b-6b00916ac083</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Activité choix de numéro/07-Annulation de l activite choix de numéro</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>21c1ed70-87f3-410c-a95c-05455e96501c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Activité récupération numéro/08-Annulation de l activite récupération numéro</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6f3871f2-f3e5-4cfe-a227-c1e60d55c0a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Activité SIM Swap/07-Annulation de l activite SIM Swap</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a10dc873-eac4-43ed-9f5e-52d1d64e38b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Activité récupération numéro/02-Recuperation numero avec un ICCID invalide</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9d403ab6-cfc8-4333-9293-12c165040bae</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Activité SIM Swap/02-SIM Swap avec un ICCID invalide</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aca313d9-963c-4a8a-993e-a76b470b6a05</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Activité choix de numéro/03-Choix numéro sans sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0cb78a46-fc0b-4cf7-a262-fd222fae08d0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>80eb39c6-db45-45ab-804d-6f6dbc8b1e08</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>75ffef15-3383-4afc-84c7-d9d74f86cbdc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Activité choix de numéro/05-Choix numéro avec sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cb87d9c3-5299-47de-8e13-06e7088901ce</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>83d1dd1a-460d-4304-9c1b-5dd7947d5f4c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d705fc39-6a78-4165-bb06-acc26cb0002f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Activité SIM Swap/03-SIM Swap sans sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>879fb405-88cd-49e6-b111-36680c2df3e3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d0eb708a-8d0b-4a25-957b-5a1f272a5d8a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>400eef62-800a-49f7-b03c-21234a2df86f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Activité SIM Swap/02-SIM Swap avec un ICCID invalide</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ce038ac2-7738-4052-bf9a-f102e02d0b96</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Activité récupération numéro/03-Récupération numéro sans sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6b4b3868-e48b-4f61-95f8-f18a71c2b140</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>dcbe53d9-a701-4fec-b68a-64603eceb157</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cde73e99-705d-4317-946a-dd3ec0054335</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Activité récupération numéro/05-Récupération numéro avec sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b51e109c-12fa-4d80-95dc-1c1660296bce</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4008e60a-43eb-444c-ad33-59e1ea6e9a96</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8f793894-6743-44a2-956a-6b7854074e55</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Activité choix de numéro/04-Vérification opération choix numéro sans sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f6df6b74-e061-424d-a1b1-2f8a52e1a659</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6f2c0ce6-2379-4baf-bea0-c66a0070026f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>07077598-d686-4060-ac68-8e9280724828</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Activité choix de numéro/06-Vérification opération choix numéro avec sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>87268653-696f-4ac8-8066-0db113ba4f01</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2fddc8ea-91d9-434c-b6f3-2230f993be33</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2244b952-20e3-47f4-b1fd-1287b9603d27</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Activité SIM Swap/04-Vérification opération SIM Swap sans sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c04e8b0b-a232-4f21-81de-14b05b57cb6d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3e111d53-4f62-486d-a510-8edee8e140b6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1358fa82-81f6-4ff2-8b1e-6164e06323fc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Activité SIM Swap/06-Vérification opération SIM Swap avec sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4a6f8896-7dd8-4586-af71-fb030dc0e01d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>44e4a3b1-092a-46fd-b1c8-0c1a6f2f942c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a7c082ce-a188-4beb-abf7-53a9428dad80</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Activité récupération numéro/04-Vérification opération Recuperation numéro sans sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>999f49a2-be22-4792-87ef-e6948ee4bbac</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>549c5aaa-fe9f-4641-99dd-405039deb24c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b17512b1-32d9-456d-9d90-6af7f8438c26</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Activité récupération numéro/06-Vérification opération Recuperation numéro avec sortie SIM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4ea264bb-0626-4f4a-b266-2cd9bf8a2bf4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>85d587bf-6ee7-4de1-b5d2-2e073df226f5</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

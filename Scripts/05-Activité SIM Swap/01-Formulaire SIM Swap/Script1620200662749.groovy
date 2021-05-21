@@ -155,7 +155,7 @@ WebUI.callTestCase(findTestCase('00-Called Test Case/Activite/Vérification de l
     FailureHandling.CONTINUE_ON_FAILURE)
 
 'Vérifier la conformité du formulaire'
-WebUI.callTestCase(findTestCase('05-Activité SIM Swap/04-Vérification formulaire SIM Swap'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('05-Activité SIM Swap/00-Called Test Case/Vérification formulaire SIM Swap'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 'Vérifier la présence du bouton Nouveau avec les onglets suivants:\r\n- Commentaires\r\n- Pièces jointes\r\n- Historiques'
 WebUI.verifyElementPresent(findTestObject('Page Activité/Page activité (commun)/Section Onglets/Bouton Nouveau commentaire'), 3)

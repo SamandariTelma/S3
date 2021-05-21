@@ -122,6 +122,7 @@ boolean isfound = false
 
 String numero
 
+'Cliquer sur un activité choix de numéro en cours'
 for (i = 0; (i < resultSize) && (isfound == false); i++) {
     def activite = colonneActivite.get(i)
 
@@ -159,7 +160,8 @@ WebUI.callTestCase(findTestCase('03-Activité choix de numéro/00-Called Test Ca
     [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 'Vérifier la présence du bouton Nouveau avec les onglets suivants:\r\n- Commentaires\r\n- Pièces jointes\r\n- Historiques'
-WebUI.verifyElementPresent(findTestObject('Page Activité/Page activité (commun)/Section Onglets/Bouton Nouveau commentaire'), 3)
+WebUI.verifyElementPresent(findTestObject('Page Activité/Page activité (commun)/Section Onglets/Bouton Nouveau commentaire'), 
+    3)
 
 WebUI.verifyElementPresent(findTestObject('Page Activité/Page activité (commun)/Section Onglets/Onglet Commentaire'), 3)
 

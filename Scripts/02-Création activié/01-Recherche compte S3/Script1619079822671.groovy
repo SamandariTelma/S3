@@ -20,7 +20,7 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 
 
 'Initialisation JDD'
-String numeroCompte = GlobalVariable.numeroCompte
+String numeroCompte = '0451006'
 
 String typeCompte = 'Client Entreprise'
 
