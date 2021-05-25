@@ -52,6 +52,9 @@ WebUI.delay(0.500)
 
 WebUI.switchToWindowUrl(GlobalVariable.url + 'index.xhtml')
 
+//Forcer à naviguer sur l'url indiqué si celui-ci tente de se rediriger vers un autre environnement 
+WebUI.navigateToUrl(GlobalVariable.url)
+
 WebUI.waitForElementPresent(findTestObject('Page Login/Champ user'), 10)
 
 'Saisir le bon login username et password'
