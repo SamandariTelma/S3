@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[contains(text(),'Recharger')]//following::span[1]</value>
+         <value>//a[contains(text(),'Recharger')]//following::a[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

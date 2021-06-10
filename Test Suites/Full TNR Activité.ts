@@ -104,19 +104,19 @@
    <testCaseLink>
       <guid>a10dc873-eac4-43ed-9f5e-52d1d64e38b0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/04-Activité récupération numéro/02-Recuperation numero avec un ICCID invalide</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9d403ab6-cfc8-4333-9293-12c165040bae</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/05-Activité SIM Swap/02-SIM Swap avec un ICCID invalide</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>aca313d9-963c-4a8a-993e-a76b470b6a05</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/03-Activité choix de numéro/03-Choix numéro sans sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -134,7 +134,7 @@
    <testCaseLink>
       <guid>75ffef15-3383-4afc-84c7-d9d74f86cbdc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/03-Activité choix de numéro/05-Choix numéro avec sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -152,7 +152,7 @@
    <testCaseLink>
       <guid>d705fc39-6a78-4165-bb06-acc26cb0002f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/05-Activité SIM Swap/03-SIM Swap sans sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -170,13 +170,13 @@
    <testCaseLink>
       <guid>400eef62-800a-49f7-b03c-21234a2df86f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/05-Activité SIM Swap/02-SIM Swap avec un ICCID invalide</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ce038ac2-7738-4052-bf9a-f102e02d0b96</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/04-Activité récupération numéro/03-Récupération numéro sans sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -194,7 +194,7 @@
    <testCaseLink>
       <guid>cde73e99-705d-4317-946a-dd3ec0054335</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/04-Activité récupération numéro/05-Récupération numéro avec sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -212,7 +212,7 @@
    <testCaseLink>
       <guid>8f793894-6743-44a2-956a-6b7854074e55</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/03-Activité choix de numéro/04-Vérification opération choix numéro sans sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -230,7 +230,7 @@
    <testCaseLink>
       <guid>07077598-d686-4060-ac68-8e9280724828</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/03-Activité choix de numéro/06-Vérification opération choix numéro avec sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -248,7 +248,7 @@
    <testCaseLink>
       <guid>2244b952-20e3-47f4-b1fd-1287b9603d27</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/05-Activité SIM Swap/04-Vérification opération SIM Swap sans sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -266,7 +266,7 @@
    <testCaseLink>
       <guid>1358fa82-81f6-4ff2-8b1e-6164e06323fc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/05-Activité SIM Swap/06-Vérification opération SIM Swap avec sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -284,7 +284,7 @@
    <testCaseLink>
       <guid>a7c082ce-a188-4beb-abf7-53a9428dad80</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/04-Activité récupération numéro/04-Vérification opération Recuperation numéro sans sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -302,7 +302,7 @@
    <testCaseLink>
       <guid>b17512b1-32d9-456d-9d90-6af7f8438c26</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/04-Activité récupération numéro/06-Vérification opération Recuperation numéro avec sortie SIM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

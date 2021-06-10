@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>PREPROD</name>
+   <name>RECETTE</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>INIT</description>
-      <initValue>'18497002'</initValue>
+      <initValue>'0451006'</initValue>
       <name>numeroCompte</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

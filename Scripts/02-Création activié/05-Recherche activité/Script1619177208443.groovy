@@ -16,9 +16,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 'Initialisation JDD'
-String numeroActivite = '3437057'
+String numeroActivite = '677076101'
 
-String typeActivite = 'Activité Sim Swap'
+String typeActivite = 'Activité Choix de Numéro'
 
 String nomCompte = 'TNRSND'
 
